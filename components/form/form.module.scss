@@ -1,0 +1,69 @@
+@mixin lg {
+  @media (max-width: 886px) {
+    @content;
+  }
+}
+
+@mixin mob {
+  @media (max-width: 570px) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (max-width: 995px) {
+    @content;
+  }
+}
+
+.form {
+  background-color: white;
+  height: 420px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 12px;
+  @include lg {
+    width: 600px;
+  }
+  @include mob {
+    width: 440px;
+  }
+
+  & h1 {
+    padding: 20px 0;
+    color: #003979;
+    font-size: 30px;
+  }
+
+  & form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    // justify-content: space-between;
+    & input {
+      width: 370px;
+    }
+    & input[type="text"] {
+      width: 400px;
+    }
+
+    & .txt {
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+    & textarea {
+      width: 400px;
+    }
+    & span {
+      padding-top: 10px;
+      margin-right: 300px;
+      color: red;
+    }
+  }
+}
+.btn {
+  margin-top: 20px !important;
+  width: 430px !important;
+}

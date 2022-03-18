@@ -1,0 +1,39 @@
+.box {
+  margin-top: 10px;
+  border-radius: 10px;
+  min-height: 300px;
+  padding: 10px;
+}
+.txt {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin: 5px;
+  background: white;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  & h1 {
+    font-size: 30px;
+    font-family: sans-serif;
+    color: #003979;
+  }
+}
+.icon {
+  width: 100px;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  & svg {
+    cursor: pointer;
+  }
+
+  & svg:first-child {
+    background: #003979;
+    font-size: 30px;
+    // padding: 15px;
+  }
+  & svg:last-child {
+    background: #d60707;
+  }
+}
